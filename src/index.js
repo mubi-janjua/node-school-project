@@ -13,6 +13,7 @@ app.post('/students', async(req, res)=>{
     try{
         await std.save()
         res.send(std)
+        res.send(student)
        
     } catch(e){
         res.send(e)
